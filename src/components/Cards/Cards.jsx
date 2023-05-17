@@ -1,4 +1,4 @@
-import Card from '../Card/Card';
+import Card from '../card/Card';
 import styles from "./Cards.module.css";
 
 export default function Cards(props) {
@@ -13,7 +13,7 @@ export default function Cards(props) {
             origin={charac.origin?.name}
             gender={charac.gender}
             image={charac.image}
-            onClose={() => window.alert('Emulamos que se cierra la card')}
+            onClose={() => props.onClose(charac.id)}
             />))
       }
    </div>
