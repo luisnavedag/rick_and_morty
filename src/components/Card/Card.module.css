@@ -73,3 +73,8 @@
   display: flex;
   justify-content: right;
 }
+
+.navLink{
+  text-decoration: none;
+  color: black;
+}

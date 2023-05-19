@@ -10,15 +10,22 @@ const handleChange = (data) => {
    setID(value);
 }
 
+const handleSearch = () => {
+   props.onSearch(id);
+   setID("");
+}
+
+
    return (
       <div className={styles.divBar}>
          <input 
+         value={id}
          onChange={handleChange}
          className={styles.inputBar} 
          type='search' />
          <button 
          className={styles.buttonBar} 
-         onClick={() => props.onSearch(id)}>Agregar</button>
+         onClick={handleSearch}>Agregar</button>
       </div>
    );
 }

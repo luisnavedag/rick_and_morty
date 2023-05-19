@@ -1,5 +1,6 @@
 .divCards{
     display: flex;
     /* align-items: center; */
-    justify-content: safe;
+    flex-wrap: wrap;
+    justify-content: center;
 }
