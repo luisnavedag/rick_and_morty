@@ -8,16 +8,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    width: 50vw;
+    width: 60vw;
     height: 80vh;
     font-family: 'Schoolbell', cursive;
-    background-color: #EFE4C6;
+    background-color: #6fddf1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     transition: .3s;
     &:hover{
-        background-color: #eaca72;
+        background-color: #2da4b9;
         transition: .3s;
         cursor: pointer;
     }
@@ -49,5 +49,24 @@
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 4px solid black;
+    /* border: 4px solid black; */
+}
+
+.close{
+    font-family: 'Schoolbell', cursive;
+    font-size: 18px;
+    width: 60px;
+    height: 40px;
+    margin: 0 -30px 0 -10px;
+    font-weight: 700;
+    color: black;
+    background-color: #5bee5d;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+        color: white;
+        background-color: red;
+        transition: .3s;
+    }
 }

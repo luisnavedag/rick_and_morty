@@ -6,10 +6,8 @@ export default function About(props){
     
     return (
         <div className={styles.divAbout}>
-            <h1>Rick & Morty App</h1>
-            <h4>Created by Luis Naveda</h4>
-            <h4>FT-38b</h4>
-            <img src={require("./Captura.PNG")} alt="Luis" />
+            <img className={styles.imgApp}  src={require("./rickandmortylogo.png")} alt="Rick & Morty App" />
+            <div className={styles.imgRym}> </div>
         </div>
 
     )

@@ -13,11 +13,17 @@ export default function Nav(props){
     if(location.pathname === "/") return null;
 
 
+    const logout = () =>{
+        props.setAccess(false)
+     }
+
     return (
         <div className={styles.navContainer}>
             <Link to="/home"><button className={styles.navButtons}>Home</button></Link>
-            <SearchBar onSearch={props.onSearch} />
+            <Link to="/favorites"><button className={styles.favButton}>Favorites❤️</button></Link>
             <Link to="/about"><button className={styles.buttonAbout} >About</button></Link>
+            <SearchBar onSearch={props.onSearch} />
+            <button onClick={logout} className={styles.logoutButton}>Logout</button>
         </div>
     )
 }

@@ -2,36 +2,45 @@
 
 /*Formato de toda la tarjeta*/
 .divCard {
+  position: relative;
+  left: 0;
+  bottom: 0;
   margin: 15px;
   padding: 25px;
-  background-color: #EFE4C6;
+  background-color: #fbfc0b;
   width: 300px;
   height: 450px;
-  border: 1px solid #615126;
+  border: 1px solid black;
   border-radius: 20px;
   font-family: 'Schoolbell', cursive;
-  box-shadow: -8px 8px 0 black;
+  box-shadow: -6px 6px #e0e012be;
   font-weight: 500;
-  transition: .3s;
+  transition: .2s;
+  opacity: 0;
+  animation: slideLeft .5s ease forwards;
+  animation-delay: .1s;
 }
 
 .divCard:hover{
-  background-color: #eaca72;
-  box-shadow: 0 0 0 black;
+  left: -6px;
+  bottom: -6px;
+  background-color: #efef1c;
+  box-shadow: none;
   transition: .3s;
+  
 }
 
 /*Imagen en la tarjeta*/
 .divCard img{
+  margin-top: -5px;
   width: 80%;
   height: 50%;
-  border: 3px solid black;
-  border-radius: 50%;
+  border: 3px solid #e0e012;
 }
 
 /*Nombre en la tarjeta*/
 .cardName{       
-  margin-top: -20px;
+  margin-top: 10px;
   font-size: 30px;
   margin-bottom: -10px;
 }
@@ -54,27 +63,49 @@
 .cardDeleteButton{
   margin-right: -20px;
   font-weight: 700;
-  color: white;
-  background-color: red;
+  color: black;
+  background-color: #5bee5d;
   border-radius: 30%;
   cursor: pointer;
   transition: .3s;
 }
 
 .cardDeleteButton:hover{
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: red;
   transition: .3s;
 }
 
 /*Div para alinear el boton*/
 
 .divButton{
+  margin-top: -10px;
+  margin-left: -15px;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
 
 .navLink{
   text-decoration: none;
   color: black;
 }
+
+/* Boton de fav */
+
+.favButton{
+  border: none;
+  background-color: transparent;
+}
+
+/* Transitions */
+@keyframes slideLeft {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

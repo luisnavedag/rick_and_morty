@@ -25,7 +25,7 @@ const handleSearch = () => {
          type='search' />
          <button 
          className={styles.buttonBar} 
-         onClick={handleSearch}>Agregar</button>
+         onClick={handleSearch}>Add</button>
       </div>
    );
 }

@@ -2,22 +2,47 @@
 
 
 .divAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
     position: absolute;
     top: 520%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    width: 45vw;
+    width: 60vw;
     height: 80vh;
     font-family: 'Schoolbell', cursive;
-    background-color: #1e1704a9;
-    color: white;
+    background-image: url("./pxfuel\ \(1\).jpg");
+    color: black;
+    border: 3px solid #bfbf37;
 }
 
-.divAbout img{
-    margin-top: 30px;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid white;
+.imgRym{
+    background-image: url("serious.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    width: 550px;
+    height: 600px;
+    background-position: center;
+    transition: background-image 0.6s ease-in-out;
+    &:hover{
+        background-image: url("https://www.pngplay.com/wp-content/uploads/12/Rick-And-Morty-Wallpaper-Transparent-PNG.png");
+        cursor: pointer;
+       
+    }
 }
+
+.imgApp{
+    width: 400px;
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+

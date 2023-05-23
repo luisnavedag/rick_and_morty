@@ -7,6 +7,7 @@ import {Routes, Route, useNavigate} from "react-router-dom"
 import About from './components/about/About.jsx';
 import Detail from './components/detail/Detail.jsx';
 import Form from './components/form/Form';
+import Favorites from './components/favorites/Favorites';
 
 
 
@@ -15,22 +16,31 @@ const [characters, setCharacters] = useState([]);
 const [access, setAccess] = useState(false);
 
 const navigate = useNavigate()
-const EMAIL = "luisnaveda10@gmail.com"
-const PASSWORD = "25848737";
+const EMAIL = "rym@gmail.com"
+const PASSWORD = "123456";
 
 const login = (userData) =>{
    if (userData.password === PASSWORD && userData.email === EMAIL) {
       setAccess(true);
       navigate('/home');
    }
+   else{
+      alert("Wrong email or password")
+   }
 }
+
+
 
 useEffect(() => {
    !access && navigate('/');
 }, [access]);
 
 function onSearch(id) {
-   axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
+   if(id < 1 || id > 826) {
+     return alert('¡No hay personajes con este ID!');
+   }
+   else { 
+      axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
       if (data.name) {
          //Evitando que se dupliquen
          const characterExists = characters.some((character) => character.id === data.id)
@@ -39,10 +49,8 @@ function onSearch(id) {
          } else {
             window.alert('¡El personaje ya está en pantalla!');
          }
-      } else {
-         window.alert('¡No hay personajes con este ID!');
-      }
-   });
+      }  
+   });}
 }
 
 
@@ -53,11 +61,12 @@ const onClose = (id) => {
    return (
       <div className='App'>
          
-         <Nav onSearch={onSearch} />
+         <Nav onSearch={onSearch} setAccess={setAccess} />
          <Routes>
             <Route  exact path='/' element={<Form login={login} />} />
             <Route path="/home" element={<Cards characters={characters}
           onClose={onClose}/>} />
+          <Route path='/favorites' element={<Favorites/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/detail/:id" element={<Detail characters={characters} />} />
          </Routes>
