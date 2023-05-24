@@ -1,0 +1,39 @@
+.divFav{ 
+display: flex;
+/* align-items: center; */
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.divSelectors{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    border: 2px solid #050504;
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Schoolbell', cursive;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .select:focus {
+    outline: none;
+    box-shadow: 0 0 3px #aaaaaa;
+    
+  }
+  
+  .select option {
+    background-color: #ffffff;
+    color: #333333;
+    cursor: pointer;
+  }

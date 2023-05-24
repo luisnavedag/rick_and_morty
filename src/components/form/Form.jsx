@@ -40,8 +40,7 @@ const handleSubmit = (event) => {
             value={userData.email}
             placeholder="Email..."
             className={styles.inputEmail}
-            type="email" 
-            autoComplete="off"/>
+            type="email" />
             <span>{errors.email ? errors.email : <br/>}</span>
 
             <label>Password</label>

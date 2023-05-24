@@ -35,10 +35,6 @@ useEffect(() => {
            <div className={styles.divImg}>
             <img src={character.image} alt={character.name} />
             </div>
-           
-
-
-
         </div>
     )
 }

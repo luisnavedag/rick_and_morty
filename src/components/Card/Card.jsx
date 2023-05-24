@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 function Card(props) {
    const [isFav, setIsFav] = useState(false);
 
-   
    const handleFavorite = () => {
       if(isFav){
          setIsFav(false);

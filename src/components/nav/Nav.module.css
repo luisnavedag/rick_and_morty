@@ -75,7 +75,7 @@
     position: relative;
     left: 0;
     bottom: 0;
-    width: 90px;
+    width: 120px;
     height: 40px;
     border-radius: 10px;
     background-color: #5bee5d;
@@ -100,7 +100,7 @@
  .favButton{
     font-family: 'Schoolbell', cursive;
     font-size: 18px;
-    margin-left: 20px;
+    margin-left: 5px;
     position: relative;
     left: 0;
     bottom: 0;

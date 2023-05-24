@@ -2,6 +2,7 @@
 
 
 .divContainer{
+    
     position: absolute;
     margin-top: -25px;
     top: 550%;
@@ -11,13 +12,13 @@
     width: 60vw;
     height: 80vh;
     font-family: 'Schoolbell', cursive;
-    background-color: #6fddf1;
+    background-color: #fbfc0b;
     display: flex;
     flex-direction: row;
     justify-content: center;
     transition: .3s;
     &:hover{
-        background-color: #2da4b9;
+        background-color: #efef1c;
         transition: .3s;
         cursor: pointer;
     }

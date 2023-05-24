@@ -7,6 +7,7 @@ import { Link, useLocation } from "react-router-dom";
 
 
 export default function Nav(props){
+
     const location = useLocation();
     // console.log(location);
      

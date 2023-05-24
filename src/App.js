@@ -8,6 +8,7 @@ import About from './components/about/About.jsx';
 import Detail from './components/detail/Detail.jsx';
 import Form from './components/form/Form';
 import Favorites from './components/favorites/Favorites';
+import Error from './components/error/Error';
 
 
 
@@ -69,6 +70,7 @@ const onClose = (id) => {
           <Route path='/favorites' element={<Favorites/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/detail/:id" element={<Detail characters={characters} />} />
+            <Route path='*' element={<Error/>} />
          </Routes>
 
       </div>
