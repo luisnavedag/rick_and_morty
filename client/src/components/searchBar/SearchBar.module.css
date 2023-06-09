@@ -1,0 +1,52 @@
+/* El Div que contiene el input y el boton */
+.divBar{
+  margin: 0;
+  padding-right: 20px;
+  display: flex;
+  justify-content: right;
+}
+
+/* El input */
+
+.inputBar{
+  font-family: 'Schoolbell', cursive;
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  margin-left: 500px;
+  margin-right: 15px;
+  width: 20vw;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+/* El boton */
+
+.buttonBar{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  font-family: 'Schoolbell', cursive;
+  font-size: 18px;
+  /* margin-left: 170px; */
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #5bee5d;
+  color: black;
+  font-weight: bold;
+  box-shadow: -3px 3px #2b882cab;
+  cursor: pointer;
+  transition: .2s; 
+}
+
+.buttonBar:hover{
+  left: -2px;
+  bottom: -2px;
+  background-color: #6fddf1;
+  color: black;
+  box-shadow: none;
+  transition: .3s;
+}

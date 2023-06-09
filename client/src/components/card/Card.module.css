@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+/*Formato de toda la tarjeta*/
+.divCard {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 15px;
+  padding: 25px;
+  background-color: #fbfc0b;
+  width: 300px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: 'Schoolbell', cursive;
+  box-shadow: -6px 6px #e0e012be;
+  font-weight: 500;
+  transition: .2s;
+  opacity: 0;
+  animation: slideLeft .5s ease forwards;
+  animation-delay: .1s;
+}
+
+.divCard:hover{
+  left: -6px;
+  bottom: -6px;
+  background-color: #efef1c;
+  box-shadow: none;
+  transition: .3s;
+  
+}
+
+/*Imagen en la tarjeta*/
+.divCard img{
+  margin-top: -5px;
+  width: 80%;
+  height: 50%;
+  border: 3px solid #e0e012;
+}
+
+/*Nombre en la tarjeta*/
+.cardName{       
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+
+/*Div que contiene el texto*/
+.divText{
+  width: 100%;
+  height: 50%;
+}
+
+/*Datos de la tarjeta*/
+
+.cardDetails{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*Boton para eliminar la tarjeta*/
+.cardDeleteButton{
+  margin-right: -20px;
+  font-weight: 700;
+  color: black;
+  background-color: #5bee5d;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cardDeleteButton:hover{
+  color: white;
+  background-color: red;
+  transition: .3s;
+}
+
+/*Div para alinear el boton*/
+
+.divButton{
+  margin-top: -10px;
+  margin-left: -15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLink{
+  text-decoration: none;
+  color: black;
+}
+
+/* Boton de fav */
+
+.favButton{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Transitions */
+@keyframes slideLeft {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

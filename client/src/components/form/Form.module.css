@@ -1,0 +1,100 @@
+.divForm{
+    position: absolute;
+    /* top: 520%; */
+    left: 35%;
+    margin-top: 20px;
+    padding: 20px;
+    width: 25vw;
+    height: 80vh;
+    font-family: 'Schoolbell', cursive;
+    background-color: #fbfc0b;
+    border: 3px solid #cdcd11;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    transition: .4s;
+    cursor: pointer;
+    &:hover{
+        /* background-color: #3fa02e; */
+        transition: .4s;
+    }
+}
+
+.divForm img{
+    margin-top: -70px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid #cdcd11;
+}
+
+.inputEmail {
+    font-size: 18px;
+    font-family: 'Schoolbell', cursive;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 30px;
+  &:hover{
+    opacity: 0.8;
+  }}
+
+.inputPassword {
+    font-size: 18px;
+    font-family: 'Schoolbell', cursive;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 30px;
+    &:hover{
+        opacity: 0.8;
+      }
+}
+
+.formContainer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formContainer span{
+    font-size: 15px;
+}
+
+.formContainer label{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.formContainer button{
+    position: relative;
+    font-family: 'Schoolbell', cursive;
+    font-size: 18px;
+    margin-bottom: -45px;
+    margin-top: 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #6fddf1;
+    color: black;
+    font-weight: bold;
+    box-shadow: -3px 3px #2b882cab;
+    cursor: pointer;
+    transition: .2s;
+}
+    
+.formContainer button:hover{
+    left: -2px;
+    bottom: -2px;
+    background-color: #36c938ab;
+    color: black;
+    box-shadow: none;
+    transition: .3s;
+}
+
+
+
+
